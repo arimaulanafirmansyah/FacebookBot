@@ -1,0 +1,9 @@
+#bugs
+bugs/*
+
+# Test
+test.php
+
+# Log
+storage/*
+!storage/.gitkeep
