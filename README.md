@@ -6,5 +6,5 @@ Just Bot Facebook
 - Bot Reaction
 
 # ChangeLog
-* 09 February 2022
+*09 February 2022*
 - Initial
