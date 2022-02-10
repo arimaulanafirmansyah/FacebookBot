@@ -1,6 +1,8 @@
 # FacebookBot
 Just Bot Facebook
 
+![Riedayme](https://github.com/riedayme/FacebookBot/blob/master/preview.png?raw=true)
+
 # Featured
 - Login with cookie
 - Bot Reaction
