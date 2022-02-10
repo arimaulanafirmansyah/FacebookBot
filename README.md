@@ -1,7 +1,7 @@
 # FacebookBot
 Just Bot Facebook
 
-![Riedayme](https://github.com/riedayme/FacebookBot/blob/master/preview.png?raw=true)
+![Riedayme](https://github.com/riedayme/FacebookBot/blob/main/preview.png?raw=true)
 
 # Featured
 - Login with cookie
