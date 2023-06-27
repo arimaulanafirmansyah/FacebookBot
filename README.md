@@ -14,3 +14,6 @@ Just Bot Facebook
 ```php
 php run.php
 ```
+
+## Change Log
+- Update Get Token Use Cookie ( 06-27-2023 )

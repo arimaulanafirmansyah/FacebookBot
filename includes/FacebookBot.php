@@ -331,19 +331,30 @@ class FacebookBot
 
 		if ($this->debug) echo "Search AccessToken".PHP_EOL;
 
-		$url = "https://business.facebook.com/creatorstudio/home";
-
+		$url = "https://business.facebook.com/business_locations/?nav_source=flyout_menu";
 		$connect = $this->Fetch($url, false , $this->headers , false, false, $this->proxy);
 		if (!$connect['status']) {
 			die($connect['response']);
 		}
+		$response = $connect['body'];
+		$accesstoken = null;
 
-		$accesstoken = $this->GetStringBetween($connect['body'],'"userAccessToken":"','","rightsManagerVersion"');	
-		if (!$accesstoken) {
-			die("Can't Get AccessToken");
+		if (preg_match('/"EAAG[^"]+"/', $response, $matches)) {
+    	$accesstoken = trim($matches[0], '"');
 		}
 
-		if ($this->debug) echo "AccessToken Found".PHP_EOL;
+		if ($accesstoken) {
+   		echo "Access Token Found\n";
+		} else {
+    	die("Error, Get Ulang Cookie!'");
+		}
+		
+		// $accesstoken = $this->GetStringBetween($connect['body'],'"userAccessToken":"','","rightsManagerVersion"');
+		// if (!$accesstoken) {
+		// 	die("Can't Get AccessToken");
+		// }
+
+		// if ($this->debug) echo "AccessToken Found".PHP_EOL;
 
 		$this->login = [
 			'accesstoken' => $accesstoken

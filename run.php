@@ -6,8 +6,8 @@ require "modules/Menu.php";
 date_default_timezone_set('Asia/Jakarta');
 
 echo "FacebookBot by FaanTeyki".PHP_EOL;
-echo "Version: 1.0".PHP_EOL;		
-echo "LastUpdate: 9 Februari 2022".PHP_EOL.PHP_EOL;		
+echo "Update By: Ari Maulana Firmansyah".PHP_EOL;		
+echo "LastUpdate: 27 Juni 2023".PHP_EOL.PHP_EOL;		
 
 $Auth = new Auth();
 $login = $Auth->Start();
